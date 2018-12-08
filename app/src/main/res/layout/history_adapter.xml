@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/questionLabel"
+        style="@style/regular_text"
+        android:layout_gravity="center_horizontal"
+        android:text="Have you read newspaper today"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            style="@style/regular_text"
+            android:text="Date:  "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dateLabel"
+            style="@style/regular_text"
+            android:text="27/09/18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/regular_text"
+            android:text="Country:"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/country_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  India" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/regular_text"
+            android:text="Provience:"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/provience_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Andman Nicobar" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/result_button"
+        style="@style/regular_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:text="See results"
+        android:textColor="@color/colorPrimaryDark" />
+
+</LinearLayout>
