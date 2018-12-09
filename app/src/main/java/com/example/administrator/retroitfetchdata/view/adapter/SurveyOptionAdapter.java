@@ -33,7 +33,6 @@ public class SurveyOptionAdapter extends RecyclerView.Adapter<SurveyOptionAdapte
     @Override
     public void onBindViewHolder(@NonNull final OptionHolder holder, int position) {
         holder.bindTo(options.get(position));
-
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -41,7 +41,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/country_label"
+            android:id="@+id/countryLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="  India" />
@@ -58,14 +58,14 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/provience_label"
+            android:id="@+id/provinceLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="  Andman Nicobar" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/result_button"
+        android:id="@+id/resultButton"
         style="@style/regular_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

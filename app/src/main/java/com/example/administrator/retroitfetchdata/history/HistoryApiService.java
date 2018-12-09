@@ -1,6 +1,7 @@
 package com.example.administrator.retroitfetchdata.history;
 
 import com.example.administrator.retroitfetchdata.helper.Constant;
+import com.example.administrator.retroitfetchdata.history.HistoryResponse.HistoryResponse;
 import com.example.administrator.retroitfetchdata.view.activity.HistoryActivity;
 
 import retrofit2.Call;
@@ -9,10 +10,10 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class HIstoryApiService {
+public class HistoryApiService {
     HistoryActivity historyActivity;
 
-    public HIstoryApiService(HistoryActivity historyActivity) {
+    public HistoryApiService(HistoryActivity historyActivity) {
         this.historyActivity = historyActivity;
     }
 
@@ -48,7 +49,6 @@ public class HIstoryApiService {
     private HistoryResponse getResultFailedResponse() {
         HistoryResponse response = new HistoryResponse();
         response.success = false;
-        response.message = "Something went wrong!";
         return response;
     }
 

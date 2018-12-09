@@ -6,9 +6,10 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.administrator.retroitfetchdata.preference.AuthPreference;
+import com.example.administrator.retroitfetchdata.view.activity.HistoryActivity;
 import com.example.administrator.retroitfetchdata.view.activity.SurveyActivity;
 
-public class SpalshScreenActivity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,11 +18,12 @@ public class SpalshScreenActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent;
+                /*Intent intent;
                 if (AuthPreference.isUserLoggedIn(getApplicationContext()))
                     intent = new Intent(getApplicationContext(), SurveyActivity.class);
                 else
-                    intent = new Intent(SpalshScreenActivity.this, AuthActivity.class);
+                    intent = new Intent(SplashActivity.this, AuthActivity.class);*/
+                Intent intent = new Intent(SplashActivity.this, HistoryActivity.class);
                 startActivity(intent);
                 finish();
             }
